@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 ###!/usr/bin/python3 # versão manual
-aca
+
 # Imports
 from colorama import Fore, Back, Style
 

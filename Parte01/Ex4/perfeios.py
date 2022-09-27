@@ -1,25 +1,40 @@
-#Calcular números perfeitos (aqueles cuja soma dos divisores igualam o número) como por exemplo 6 = 3 + 2 + 1. Além do main() criar a função isPerfect(), que indica se o número é perfeito.
+#!/usr/bin/env python3
 
-maximum_number = 100
-sum1=0
-def isPerfect(value):
-    for divider in range(1,value):
-	if   (value % divider == 0):
-		sum1=sum1+divider
-	if (sum1 == n):
-		value == 1
-	else:
-		value == 0
+def is_perfect(x):
+    sum = 0
+    for i in range(1, x):
+        if x%i == 0:
+            sum += i
+    if sum == x:
+        return True
+    else:
+        return False
 
-
-
-def main():
-    print("Starting to compute perfect numbers up to " + str(maximum_number))
-
-    for i in range(0, maximum_number):
-        if isPerfect(i):
-            print('Number ' + str(i) + ' is perfect.')
+def print_perfect_numbers(a, b):
+    for i in range(a, b+1):
+        if is_perfect(i):
+            print(i)
 
 
-if __name__ == "__main__":
-    main()
+print_perfect_numbers(1, 100)
+
+
+def perfect_Number(n):  #user-defined function
+   if n < 1:
+      return False
+
+   perfect_sum = 0
+   for i in range(1,n):
+      if n%i==0:
+         perfect_sum += i
+   return perfect_sum == n
+
+# take inputs
+min_value = 1
+max_value = 100
+
+# calling function and print perfect numbers
+print('Perfect numbers from %d to %d are:' %(min_value, max_value))
+for i in range(min_value, max_value+1):
+   if perfect_Number(i):
+      print(i, end=', ')
