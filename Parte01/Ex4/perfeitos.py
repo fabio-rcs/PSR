@@ -7,7 +7,7 @@
 
 maximum_number = 100
 
-#function to check is i is perfect number
+#function to check is i is a perfect number
 def isPerfect(i):
 	
 		sum=0
