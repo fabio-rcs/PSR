@@ -28,9 +28,11 @@ def readAllUpTo(stop_char):
     #Separates characters according to type (numeric or not)
     numeric_inputs=[input for input in inputs if input.isnumeric()]
     other_inputs=[input for input in inputs if not input.isnumeric()]
-  
+
+    numeric_inputs_ascending_order= sorted(input for input in numeric_inputs)
+
     #Count how many characters were entered of each type
-    print('You entered these numbers by this order:',str(numeric_inputs),'.')
+    print('You entered these numbers:',str(numeric_inputs_ascending_order),'.')
 
 
 #Main function prints an introductory text and calls the rest of the code. End character is 'X'
