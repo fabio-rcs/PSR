@@ -3,7 +3,11 @@
 #Calcular números perfeitos (aqueles cuja soma dos divisores igualam o número) 
 #como por exemplo 6 = 3 + 2 + 1. 
 # Além do main() criar a função isPerfect(), que indica se o número é perfeito.
-
+"""Gets the integer divider of a number"""
+"""Args:
+		number (int): a number to test"""
+"""Return:
+			perfect number"""
 
 maximum_number = 100
 
