@@ -5,7 +5,17 @@
 		},
 		{
 			"path": "../psr_22-23"
+		},
+		{
+			"name": "TypeTesterPSR",
+			"path": "../TypeTesterPSR"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"cSpell.words": [
+			"getch",
+			"readchar",
+			"readkey"
+		]
+	}
 }
