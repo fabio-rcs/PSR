@@ -10,9 +10,9 @@ def addComplex(x, y):
     real = a + c
     imaginary = b + d
 
-    # alternative 2
-    # real = x[0] + y[0]
-    # imaginary = x[1] + y[1]
+    #? alternative 2
+    #? real = x[0] + y[0]
+    #? imaginary = x[1] + y[1]
 
     return (real, imaginary)
 
@@ -31,25 +31,23 @@ def printComplex(x):
     print(str(real) + '+' + str(imaginary) + 'i')
 
 def main():
-    # ex2 a)
-
-    # define two complex numbers as tuples of size two
-    # A complex number is represented as a tuple (real, imaginary)
+    # Definition of the two complex numbers to operate with
     c1 = (5, 3)
     c2 = (-2, 7)
-    printComplex(c1)
-    printComplex(c2)
+    # Printing the complex numbers
+    print('1st complex number is: '), printComplex(c1) 
+    print('2nd complex number is: '), printComplex(c2)
     
 
-    # Test add
+    # Addition
     c3 = addComplex(c1, c2)
-    print('Result of addition is:')
+    print('\nResult of addition is:')
     printComplex(c3)
 
-    # test multiply
+    # Multiplication
     print('Result of multiplication is:')
     printComplex(multiplyComplex(c1, c2))
 
-
+# Sees if function was called in the terminal
 if __name__ == "__main__":
     main()

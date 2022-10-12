@@ -30,7 +30,7 @@ def ticToc():
 def main():
 
     #Prints the current date with colored text
-    print(Style.BRIGHT,'The current date is:',Style.NORMAL,Back.LIGHTMAGENTA_EX,ctime(),Style.RESET_ALL)
+    print(Style.BRIGHT,'The current date is:',Style.BRIGHT,Back.LIGHTMAGENTA_EX,Fore.BLACK, ctime(),Style.RESET_ALL)
 
     #Calls the function
     ticToc()
