@@ -2,5 +2,11 @@
     "cSpell.ignoreWords": [
         "readchar",
         "readkey"
+    ],
+    "cSpell.words": [
+        "atlascar",
+        "fabio",
+        "IMREAD",
+        "imshow"
     ]
 }

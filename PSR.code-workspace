@@ -1,14 +1,19 @@
 {
 	"folders": [
 		{
-			"path": "."
-		},
-		{
+			"name": "psr_22-23",
 			"path": "../psr_22-23"
 		},
 		{
+			"name": "PSR",
+			"path": "."
+		},
+		{
 			"name": "TypeTesterPSR",
-			"path": "TypeTesterPSR"
+			"path": "../TypeTesterPSR"
+		},
+		{
+			"path": "../psr_2022_tp2"
 		}
 	],
 	"settings": {
