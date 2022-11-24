@@ -6,11 +6,11 @@
         },
         {
             "name": "PSR",
-            "path": "."
+            "path": "../../catkin_ws/src/PSR"
         },
         {
             "name": "PSR",
-            "path": "../../catkin_ws/src/PSR"
+            "path": "."
         },
         {
             "name": "psr_2022_tp2",
