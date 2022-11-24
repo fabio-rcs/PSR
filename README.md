@@ -18,5 +18,6 @@ Here are all the files and functions from the classes used to learn python and R
 ##### [Flatpack commands](https://docs.flatpak.org/en/latest/using-flatpak.html)
 
 ## Useful terminal lines
-To upgrade all packages and remove old installation files.
+To upgrade all packages and remove old installation files:
+
 `sudo bash -c 'for i in update {,full-}upgrade auto{remove,clean}; do apt-get $i -y; done'`
