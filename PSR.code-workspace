@@ -1,26 +1,32 @@
 {
 	"folders": [
-		{
-			"name": "psr_22-23",
-			"path": "../psr_22-23"
-		},
-		{
-			"name": "PSR",
-			"path": "."
-		},
-		{
-			"name": "TypeTesterPSR",
-			"path": "../TypeTesterPSR"
-		},
-		{
-			"path": "../psr_2022_tp2"
-		}
-	],
+        {
+            "name": "psr_22-23",
+            "path": "../psr_22-23"
+        },
+        {
+            "name": "PSR",
+            "path": "."
+        },
+        {
+            "name": "PSR",
+            "path": "../../catkin_ws/src/PSR"
+        },
+        {
+            "name": "psr_2022_tp2",
+            "path": "../psr_2022_tp2"
+        },
+        {
+            "name": "TypeTesterPSR",
+            "path": "../TypeTesterPSR"
+        }
+    ],
 	"settings": {
 		"cSpell.words": [
 			"getch",
 			"readchar",
 			"readkey"
-		]
+        ],
+        "ros.distro": "noetic"
 	}
 }

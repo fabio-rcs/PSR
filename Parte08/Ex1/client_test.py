@@ -16,10 +16,10 @@ sock.connect(server_address)
 print ("connecting to %s (%s) with %s" % (local_hostname, local_fqdn, ip_address))
 
 # define example data to be sent to the server
-messages = [30, 'Robotics', 31, 14, 'Automation', 18]
+messages = ([30, 'Robotics', 31, 14, 'Automation', 18])
 for message in messages:
     print ('Sending message: ' + str(message))
-    sock.sendall(message)
+    sock.sendall(bytes(str(message), 'ascii')) #Converts message to string and then to bytes in ascii encoding
     time.sleep(2)  # wait for two seconds
 
 sock.close()  # close connection
