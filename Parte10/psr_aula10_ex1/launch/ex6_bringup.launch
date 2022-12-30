@@ -1,0 +1,14 @@
+<!--
+Fábio Sousa.
+PSR, December 2022.
+
+Launch file for exercise 6 of part 10 
+-->
+
+<launch>
+
+    <node pkg="rosbag" type="play" name="PR2_bag" output="screen" args="-l /home/fabio/bagfiles/PSR/Parte10/pr2_mit_rgbd.bag"/>
+
+    <node type="rviz" name="rviz" pkg="rviz" args="-d /home/fabio/rviz_config/part10.rviz"/>
+
+</launch>
