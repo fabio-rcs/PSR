@@ -1,0 +1,29 @@
+<launch>
+    <rosparam command="load" file="$(find psr_aula09_ex5)/params/params.yaml" />
+
+    <node pkg='psr_aula09_ex5' type='publisher_server.py' name='publisher_A' required='True' output='screen' > # required='True' shuts down if launch fails
+        <remap from="/chatter" to="/dog1"/>
+    </node>
+
+    <node pkg='psr_aula09_ex5' type='publisher_server.py' name='publisher_B' required='True' output='screen' >
+        <remap from="/chatter" to="/dog1"/>
+
+    </node>
+
+    <node pkg='psr_aula09_ex5' type='publisher_server.py' name='publisher_C' required='True' output='screen' >
+        <remap from="/chatter" to="/dog2"/>
+    </node>
+
+    <node pkg='psr_aula09_ex5' type='subscriber.py' name='subscriber_AB1' required='True' output='screen' >
+        <remap from="/chatter" to="/dog1"/>
+    </node>
+
+    <node pkg='psr_aula09_ex5' type='subscriber.py' name='subscriber_AB2' required='True' output='screen' >
+        <remap from="/chatter" to="/dog1"/>
+    </node>
+
+    <node pkg='psr_aula09_ex5' type='subscriber.py' name='subscriber_C' required='True' output='screen' >
+        <remap from="/chatter" to="/dog2"/>
+    </node>
+
+</launch>

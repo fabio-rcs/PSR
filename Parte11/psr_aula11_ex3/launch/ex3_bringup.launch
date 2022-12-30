@@ -1,0 +1,90 @@
+<!--
+Fábio Sousa.
+PSR, December 2022.
+
+Launch file for exercise 3 of part 11
+-->
+
+<launch>
+
+    <!-- Mercury -->
+    <node name="mercury" pkg="psr_aula11_ex3" type="circular_frame.py">
+        <remap from="parent" to="sun"/>
+        <remap from="child" to="mercury"/>
+        <param name="radius" type="double" value="0.387" />
+        <param name="speed" type="double" value="0.0159" />
+    </node>
+
+    <!-- Venus -->
+    <node name="venus" pkg="psr_aula11_ex3" type="circular_frame.py">
+        <remap from="parent" to="sun"/>
+        <remap from="child" to="venus"/>
+        <param name="radius" type="double" value="0.723" />
+        <param name="speed" type="double" value="0.0118" />
+    </node>
+
+    <!-- Earth -->
+    <node name="earth" pkg="psr_aula11_ex3" type="circular_frame.py">
+        <remap from="parent" to="sun"/>
+        <remap from="child" to="earth"/>
+        <param name="radius" type="double" value="1" />
+        <param name="speed" type="double" value="0.01" />
+    </node>
+
+    <!-- Moon -->
+    <node name="moon" pkg="psr_aula11_ex3" type="circular_frame.py">
+        <remap from="parent" to="earth"/>
+        <remap from="child" to="moon"/>
+        <param name="radius" type="double" value="0.257" />
+        <param name="speed" type="double" value="0.343" />
+    </node>
+
+    <!-- Mars -->
+    <node name="mars" pkg="psr_aula11_ex3" type="circular_frame.py">
+        <remap from="parent" to="sun"/>
+        <remap from="child" to="mars"/>
+        <param name="radius" type="double" value="1.52" />
+        <param name="speed" type="double" value="0.00818" />
+    </node>
+
+        <!-- Jupiter -->
+    <node name="jupiter" pkg="psr_aula11_ex3" type="circular_frame.py">
+        <remap from="parent" to="sun"/>
+        <remap from="child" to="jupiter"/>
+        <param name="radius" type="double" value="5.2" />
+        <param name="speed" type="double" value="0.00439" />
+    </node>
+
+        <!-- Saturn -->
+    <node name="saturn" pkg="psr_aula11_ex3" type="circular_frame.py">
+        <remap from="parent" to="sun"/>
+        <remap from="child" to="saturn"/>
+        <param name="radius" type="double" value="9.57" />
+        <param name="speed" type="double" value="0.00325" />
+    </node>
+
+        <!-- Uranus -->
+    <node name="uranus" pkg="psr_aula11_ex3" type="circular_frame.py">
+        <remap from="parent" to="sun"/>
+        <remap from="child" to="uranus"/>
+        <param name="radius" type="double" value="19.17" />
+        <param name="speed" type="double" value="0.00228" />
+    </node>
+
+        <!-- Neptune -->
+    <node name="neptune" pkg="psr_aula11_ex3" type="circular_frame.py">
+        <remap from="parent" to="sun"/>
+        <remap from="child" to="neptune"/>
+        <param name="radius" type="double" value="30.18" />
+        <param name="speed" type="double" value="0.00182" />
+    </node>
+
+        <!-- Pluto -->
+    <node name="pluto" pkg="psr_aula11_ex3" type="circular_frame.py">
+        <remap from="parent" to="sun"/>
+        <remap from="child" to="pluto"/>
+        <param name="radius" type="double" value="39.48" />
+        <param name="speed" type="double" value="0.00157 " />
+    </node>
+
+</launch>
